@@ -2,5 +2,9 @@
 <script type="text/javascript" src="./vue.js"></script>
 
 <div id="app">
-  <h2> {{product}} are in stock. </h2>
+  <ul>
+    <li v-for="product in products">
+      {{ product }}
+    </li>
+  </ul>
 </div>
